@@ -1,8 +1,10 @@
 from typing import Any, Awaitable, Callable, Coroutine, Dict
+
 from aiogram import BaseMiddleware
 from aiogram.types import TelegramObject
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
-from sql.repo import Repo
+
+from src.sql.repo import Repo
 
 
 class DataBaseMiddelware(BaseMiddleware):

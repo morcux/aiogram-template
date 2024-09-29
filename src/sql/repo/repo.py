@@ -1,10 +1,9 @@
-from abc import abstractmethod
 from typing import Optional
-from sqlalchemy import update, delete
+
+from sqlalchemy import delete, update
 from sqlalchemy.ext.asyncio.session import AsyncSession
 
-from sql.models import User
-
+from src.sql.models import User
 
 
 class UserRepo:

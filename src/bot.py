@@ -1,13 +1,10 @@
 from aiogram import Dispatcher
 
-from src.middlewares.db_middleware import DataBaseMiddelware
-
+from config import settings
 from src.handlers.admin import admin_router
 from src.handlers.user import user_router
-
+from src.middlewares.db_middleware import DataBaseMiddelware
 from src.sql.db import create_pool
-
-from config import settings
 
 session_factory = create_pool(settings.db_url)
 
